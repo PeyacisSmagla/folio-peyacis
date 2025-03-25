@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+body.dark-mode {
+  background-color: #2b2a2a;
+  color: #c94e06;
+}
+
+.folio-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50vh;
+  padding: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  .folio-label-container {
+    font-weight: 600;
+    span {
+      font-style: italic;
+    }
+    .folio-email-label {
+      text-decoration: none;
+    }
+  }
+  hr {
+    margin: 1rem 0;
+  }
+}
+
+.folio-profile-image {
+  height: 15rem;
+  width: 15rem;
+  border: 1px solid red;
+}
+
+.mode-toggle {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+}

@@ -19,18 +19,32 @@ body.dark-mode {
   color: #c94e06;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .folio-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 50vh;
-  padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 3.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   .folio-label-container {
     font-weight: 600;
     span {
+      font-family: "Bela Yasmine", serif;
       font-style: italic;
     }
     .folio-email-label {
@@ -40,12 +54,37 @@ body.dark-mode {
   hr {
     margin: 1rem 0;
   }
+  a {
+    color: rgb(125, 121, 121);
+  }
+  img {
+    height: 25rem;
+    width: 25rem;
+  }
+  .folio-arrow-icon {
+    height: 2.5rem;
+    width: 3rem;
+    cursor: pointer;
+  }
+
+  button {
+    border: none;
+    margin: 1rem 0 0 0;
+    font-size: 1.3rem;
+    padding: 0.3rem 1.5rem;
+    border-radius: 0.3rem;
+    background-image: linear-gradient(to left, #df6f0d, #e3d2c3);
+    transition: all 3s ease;
+  }
+
+  button:hover {
+    animation: bounce 1.5s ease forwards;
+  }
 }
 
-.folio-profile-image {
-  height: 15rem;
-  width: 15rem;
-  border: 1px solid red;
+.content {
+  height: 800px;
+  background: linear-gradient(white, lightgray);
 }
 
 .mode-toggle {

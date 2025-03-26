@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peyacis Smagla - Frontend Developer</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bela+Yasmine&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="light-mode">
+  <body class="light-mode">
     <button class="mode-toggle" id="mode-toggle">
-        <i class="fas fa-sun"></i> 
+      <i class="fas fa-sun"></i>
     </button>
 
-    <div class="folio-container">
+    <div class="folio-container pb-4">
+      <div
+        class="d-flex flex-column flex-md-row align-items-center justify-content-evenly p-3"
+      >
         <div class="folio-label-container">
-            <h1>Hello! I'm <span>Peyacis Smagla</span><br>Frontend Developer</h1>
-            <hr />
-            <a class="folio-email-label" href="mailto:Peyacis03@gmail.com">Peyacis03@gmail.com</a>
+          <h1>
+            Hello! I'm <span>Peyacis Smagla</span><br />Frontend Developer
+          </h1>
+          <hr />
+          <a class="folio-email-label" href="mailto:Peyacis03@gmail.com"
+            >Peyacis03@gmail.com</a
+          >
+          <br />
+          <button onclick="handleDownload()">Resume</button>
         </div>
-        <div class="folio-profile-image">
-            <img src="path_to_your_image.jpg" alt="Profile" class="folio-profile-image" />
-        </div>
+        <img
+          src="./assets/Smagla.png"
+          alt="Profile"
+          class="folio-profile-image"
+        />
+      </div>
+      <img
+        src="./assets/Arrow.png"
+        alt="arrow"
+        class="folio-arrow-icon d-flex m-auto"
+        onclick="scrollDown()"
+      />
     </div>
 
-<script src="./script.js"></script>
-</body>
+    <div class="content"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
 ``

@@ -19,7 +19,7 @@ function scrollDown() {
 
 function handleDownload() {
   const pdfLink =
-    "https://drive.google.com/uc?export=download&id=1VzmxRMsQ9SY-8yY8qRKydnIvx7lfsVhG";
+    "https://drive.google.com/uc?export=download&id=1fD-ctN8CXclmcsB4gRzl6UNQZESIi69y";
 
   const link = document.createElement("a");
   link.href = pdfLink;

@@ -138,6 +138,7 @@ body.dark-mode {
     height: 2.5rem;
     width: 3rem;
     cursor: pointer;
+    align-self: center;
   }
 
   @media screen and (max-width: 769px) {
@@ -170,8 +171,8 @@ body.dark-mode {
     }
     @media screen and (max-width: 500px) {
       padding: 1rem;
-      min-height: 70vh;
-      overflow-y: scroll;
+      max-height: 30rem;
+      overflow-y: auto;
       border: 1px solid #f2925b;
       border-radius: 0.3rem;
     }
@@ -180,6 +181,7 @@ body.dark-mode {
     height: 2.5rem;
     width: 3rem;
     cursor: pointer;
+    align-self: center;
   }
   @media screen and (max-width: 769px) {
     padding: 1rem;
@@ -195,7 +197,7 @@ body.dark-mode {
   hr {
     margin: 0.5rem 0;
     border: 1px solid #f75e06;
-    width: 25%;
+    width: 12rem;
   }
   .folio-contact-card {
     align-self: center;

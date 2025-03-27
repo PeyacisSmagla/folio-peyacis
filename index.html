@@ -24,9 +24,11 @@
   </head>
 
   <body class="light-mode">
-    <button class="mode-toggle" id="mode-toggle">
-      <i class="fas fa-sun"></i>
-    </button>
+    <div class="folio-nav-container">
+      <button class="mode-toggle" id="mode-toggle">
+        <i class="fas fa-sun"></i>
+      </button>
+    </div>
 
     <div class="folio-container pb-4">
       <div
@@ -77,13 +79,75 @@
       />
     </div>
 
-    <div class="polio-skill-container">
+    <div class="folio-skill-container">
       <h3>Skills</h3>
 
+      <div class="folio-skill-card">
+        <p class="skill-label">HTML</p>
+        <p class="skill-label">CSS</p>
+        <p class="skill-label">JavaScript</p>
+        <p class="skill-label">React</p>
+        <p class="skill-label">Redux</p>
+        <p class="skill-label">Node.js</p>
+        <p class="skill-label">Python</p>
+        <p class="skill-label">Next.js</p>
+        <p class="skill-label">TypeScript</p>
+        <p class="skill-label">Material UI (MUI)</p>
+        <p class="skill-label">React Router</p>
+        <p class="skill-label">Formik</p>
+        <p class="skill-label">Bootstrap</p>
+        <p class="skill-label">SASS</p>
+        <p class="skill-label">Tailwind CSS</p>
+        <p class="skill-label">SQLite</p>
+        <p class="skill-label">MongoDB</p>
+        <p class="skill-label">Git</p>
+        <p class="skill-label">Bitbucket</p>
+        <p class="skill-label">Jira</p>
+        <p class="skill-label">Agile Scrum</p>
+        <p class="skill-label">Responsive Design</p>
+        <p class="skill-label">API Integration</p>
+        <p class="skill-label">REST APIs</p>
+        <p class="skill-label">Performance Optimization</p>
+        <p class="skill-label">Unit Testing (Jest)</p>
+      </div>
+
+      <img
+        src="./assets/Arrow.png"
+        alt="arrow"
+        class="folio-arrow-icon d-flex m-auto"
+        onclick="scrollDown()"
+      />
+    </div>
+
+    <div class="folio-contact-container">
+      <h3>Contact Me</h3>
+      <hr />
+      <div class="folio-contact-card">
+        <div class="folio-contact-mail">
+          <img src="" alt="mail" />
+          <a href="mailto:Peyacis03@gmail.com">peyacis03@gmail.com</a>
+        </div>
+
+        <div class="folio-contact-mail">
+          <img src="" alt="number" />
+          <a href="tel:+918825421711">8825421711</a>
+        </div>
+
+        <div class="folio-contact-mail">
+          <img src="" alt="linkedin" />
+          <a href="https://www.linkedin.com/in/peyacis-smagla" target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+
+        <div class="folio-contact-mail">
+          <img src="" alt="github" />
+          <a href="https://github.com/PeyacisSmagla" target="_blank">Github</a>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
-``

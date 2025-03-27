@@ -8,8 +8,12 @@ modeToggle.addEventListener("click", () => {
   if (body.classList.contains("dark-mode")) {
     modeToggle.innerHTML =
       '<i class="fas fa-moon"  style="color : #fff;" ></i>';
+    // const mailLink = document.querySelector(".folio-contact-mail a");
+    // mailLink.style.color = "red";
   } else {
     modeToggle.innerHTML = '<i class="fas fa-sun" ></i>';
+    // const mailLink = document.querySelector(".folio-contact-mail a");
+    // mailLink.style.color = "blue";
   }
 });
 
@@ -19,7 +23,7 @@ function scrollDown() {
 
 function handleDownload() {
   const pdfLink =
-    "https://drive.google.com/uc?export=download&id=1fD-ctN8CXclmcsB4gRzl6UNQZESIi69y";
+    "https://drive.google.com/uc?export=download&id=1N4pZUR_zplqn8g4jkTrNxoUpwNnVluRe";
 
   const link = document.createElement("a");
   link.href = pdfLink;

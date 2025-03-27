@@ -8,12 +8,12 @@ modeToggle.addEventListener("click", () => {
   if (body.classList.contains("dark-mode")) {
     modeToggle.innerHTML =
       '<i class="fas fa-moon"  style="color : #fff;" ></i>';
-    // const mailLink = document.querySelector(".folio-contact-mail a");
-    // mailLink.style.color = "red";
+    const mailLink = document.querySelector(".folio-contact-mail a");
+    mailLink.style.color = "#C1620E";
   } else {
     modeToggle.innerHTML = '<i class="fas fa-sun" ></i>';
-    // const mailLink = document.querySelector(".folio-contact-mail a");
-    // mailLink.style.color = "blue";
+    const mailLink = document.querySelector(".folio-contact-mail a");
+    mailLink.style.color = "#C1620E";
   }
 });
 

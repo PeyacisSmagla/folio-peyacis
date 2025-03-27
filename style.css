@@ -16,7 +16,7 @@ body.light-mode {
 
 body.dark-mode {
   background-color: #2b2a2a;
-  color: #c94e06;
+  color: #c1620e;
 }
 
 @keyframes bounce {
@@ -46,6 +46,7 @@ body.dark-mode {
   justify-content: space-between;
   position: fixed;
   .mode-toggle {
+    margin-left: auto;
     background: none;
     border: none;
     font-size: 24px;
@@ -102,8 +103,9 @@ body.dark-mode {
     font-size: 1.3rem;
     padding: 0.3rem 1.5rem;
     border-radius: 0.3rem;
-    background-image: linear-gradient(to left, #df6f0d, #e3d2c3);
+    background-image: linear-gradient(to left, #df6f0d, #f2bf93);
     transition: all 3s ease;
+    color: #fff;
   }
 
   button:hover {
@@ -168,11 +170,15 @@ body.dark-mode {
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: all 0.9s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
     @media screen and (max-width: 500px) {
       padding: 1rem;
       max-height: 30rem;
-      overflow-y: auto;
+      overflow-y: scroll;
       border: 1px solid #f2925b;
       border-radius: 0.3rem;
     }
@@ -206,7 +212,7 @@ body.dark-mode {
     .folio-contact-mail {
       display: flex;
       align-items: center;
-
+      justify-content: center;
       margin-bottom: 1.5rem;
       img {
         display: none;
@@ -215,6 +221,7 @@ body.dark-mode {
         text-decoration: none;
         font-size: 1.1rem;
         font-weight: 500;
+        color: #c1620e;
       }
     }
   }

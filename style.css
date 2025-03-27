@@ -203,6 +203,7 @@ body.dark-mode {
     .folio-contact-mail {
       display: flex;
       align-items: center;
+
       margin-bottom: 1.5rem;
       img {
         display: none;

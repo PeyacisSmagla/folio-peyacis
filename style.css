@@ -212,10 +212,11 @@ body.dark-mode {
     .folio-contact-mail {
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: .6rem;
       margin-bottom: 1.5rem;
-      img {
-        display: none;
+      i {
+        color: #c1620e;
+        font-size: 1rem;
       }
       a {
         text-decoration: none;
